@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-lotrGold: #E4CA85;
+  --color-lotrBlack: #090A09;
+  --color-lotrDark: #0D0E0D;
+  --color-lotrParchment: #E2E2DA;
+  --color-lotrWood: #2C251A;
+  
+
+  --font-lotrDecorative: "Cinzel Decorative", serif;
+  --font-lotrLower: "EB Garamond", serif;
+}
+
+.btn-primary {
+  font-family: var(--font-lotrLower);
+  background-color: var(--color-lotrWood);
+  border: 0.5px solid var(--color-lotrGold);
+  color: var(--color-lotrParchment);
+  padding: 10px 25px;
+  border-radius: 0.25rem;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.btn-primary:hover {
+  background-color: #5c3b1e; /* a darker, richer brown – like oiled wood */
+  border-color: #d4af37;     /* soft metallic gold */
+  color: var(--color-lotrParchment);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.2); /* faint gold glow */
+}
+
+.btn-secondary {
+  font: var(--font-lotrLower);
+  background-color: var(--color-lotrParchment);
+  border: 0.5px solid var(--color-lotrGold);
+  color: var(--color-lotrWood);
+  padding: 10px 25px;
+  border-radius: 0.25rem;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.btn-secondary:hover {
+  background-color: #f1e3c4; /* warmer parchment tint */
+  border-color: #d4af37;     /* same soft gold as primary hover */
+  color: #3b240f;            /* darker wood tone for contrast */
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.15); /* faint gold glow */
+}
+
+.transition-all {
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out;
+}
+
+
+
+
