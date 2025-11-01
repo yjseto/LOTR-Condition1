@@ -5,7 +5,7 @@ export default function Header() {
         <h1
           className="text-4xl font-lotrDecorative  bg-gradient-to-b from-lotrGold to-[#7a5c24] text-transparent bg-clip-text"
         >
-          LOTR Condition
+          LOTR Feelings Visualizer
         </h1>
       </header>
 

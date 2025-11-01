@@ -56,7 +56,7 @@ export default function QuestionFlow() {
     return (
       <div className="text-center space-y-4">
         <p className="text-xl font-lotrLower text-lotrParchment">
-          Answer a few questions to see how your feelings would be visualized in Middle-earth.
+          w/ Shae
         </p>
         <button onClick={handleStart} className="btn-primary mt-4">
           Start

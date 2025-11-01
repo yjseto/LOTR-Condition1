@@ -1,10 +1,10 @@
 export async function generateImage(answers) {
   const prompt = `
-    Create a beautiful, cinematic Lord of the Rings–inspired illustration based on the following reflections:
+    Create a beautiful and emotional Lord of the Rings–inspired illustration based on the following reflections:
     ${Object.entries(answers)
       .map(([question, answer]) => `${question}: ${answer}`)
       .join("\n")}
-    Style: detailed, cinematic.
+    Style: detailed.
   `;
 
         // Mock mode for local development

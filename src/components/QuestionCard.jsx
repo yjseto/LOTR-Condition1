@@ -19,10 +19,11 @@ export default function QuestionCard({
 
   const aesthetics = [
     { name: "realistic", img: "/images/realistic.jpg" },
-    { name: "gothic", img: "/images/gothic.jpg" },
+    { name: "black and white", img: "/images/black-and-white.jpg" },
     { name: "abstract", img: "/images/abstract.jpg" },
     { name: "pastel", img: "/images/pastel.jpg" },
     { name: "renaissance", img: "/images/renaissance.jpg" },
+    { name: "pixel art", img: "/images/pixel-art.jpg" },
   ];
 
   const renderInput = () => {
@@ -91,7 +92,7 @@ export default function QuestionCard({
 
   return (
     <div className="w-full max-w-md text-center">
-      <p className="text-xl mb-4 font-lotrLower text-lotrParchment">
+      <p className="text-xl mb-4 font-lotrLower text-lotrParchment animate-fadeIn">
         {question}
       </p>
 
